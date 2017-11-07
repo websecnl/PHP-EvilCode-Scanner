@@ -1,6 +1,6 @@
 #!/bin/bash
 # Run this script inside the domain directory
-# Usage: ./scan.sh
+# Usage: sudo ./scan.sh
 # -----------------------------------------------------------------------------
 find /var/www/html -type f -exec grep 'eval(' {} \; -exec echo '[PHP CODE EXECUTION] FOUND EVAL:' {} >> security_log.txt \;
 find /var/www/html -type f -exec grep 'preg_replace(' {} \; -exec echo '[PHP CODE EXECUTION] FOUND PREG_REPLACE:' {} >> security_log.txt \;
