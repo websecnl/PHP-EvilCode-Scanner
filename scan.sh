@@ -4,7 +4,7 @@
 # Usage: ./scan.sh
 # -----------------------------------------------------------------------------
 workdir='/var/www/html'
-logfile='security.txt'
+logfile='debug_log.txt'
 
 echo '' >> $logfile;
 echo '---------------------------' >> $logfile;
