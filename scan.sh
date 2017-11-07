@@ -11,7 +11,7 @@ echo '[+] eval SCAN COMPLETE';
 find $workdir -type f -exec grep -s -R -n 'preg_replace(' {} \; -exec echo '[PHP CODE EXECUTION] FOUND PREG_REPLACE:' {} -Eron  r"%}(.*){%" >> $logfile \;
 echo '[+] preg_replace SCAN COMPLETE';
 find $workdir -type f -exec grep -s -R -n 'assert(' {} \; -exec echo '[PHP CODE EXECUTION] FOUND ASSERT:' {} -Eron  r"%}(.*){%" >> $logfile \;
-echo '[+]  SCAN COMPLETE';
+echo '[+] assert SCAN COMPLETE';
 find $workdir -type f -exec grep -s -R -n '``' {} \; -exec echo '[COMMAND EXECUTION] FOUND backticks:' {} -Eron  r"%}(.*){%" >> $logfile \;
 echo '[+] backticks SCAN COMPLETE';
 find $workdir -type f -exec grep -s -R -n 'exec(' {} \; -exec echo '[COMMAND EXECUTION] FOUND EXEC:' {} -Eron  r"%}(.*){%" >> $logfile \;
