@@ -1,3 +1,4 @@
+#!/bin/bash
 find /var/www/html -type f -exec grep 'eval(' {} \; -exec echo '[PHP CODE EXECUTION] FOUND EVAL:' {} \;
 find /var/www/html -type f -exec grep 'preg_replace(' {} \; -exec echo '[PHP CODE EXECUTION] FOUND PREG_REPLACE:' {} \;
 find /var/www/html -type f -exec grep 'assert(' {} \; -exec echo '[PHP CODE EXECUTION] FOUND ASSERT:' {} \;
