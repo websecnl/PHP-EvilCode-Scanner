@@ -1,6 +1,6 @@
 #!/bin/bash
 # chmod 777 scan.sh
-# Run this script inside the domain directory
+# Change workdir path in this code to domain root (example: /var/www/html)
 # Usage: ./scan.sh
 # -----------------------------------------------------------------------------
 workdir='/var/www/html'
